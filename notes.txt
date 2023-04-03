@@ -127,3 +127,7 @@ Variable Declarations
     Package Scope
         Cannot use := 
         CAN have unused variables
+
+Constants
+    Function Scope & Package Scope
+        CAN have unused constants
