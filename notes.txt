@@ -68,7 +68,29 @@ Software Requirements:
 To execute a go program
     go run <program.go>
 
+To compile
+    go build <program.go>
+    go build -o <binary_name> <program.go>
     
+To get the list of environment variables of the go tools
+    go env
+
+To get the values of specific environment variables
+    go env <var_name_1> <var_name_2>
+    ex:
+        go env GOOS GOARCH
+
+To change the values of environment variables
+    go env -w <var_name_1>=<value_1> <var_name_2>=<val_2>
+    ex:
+        go env -w GOOS=window GOARCH=386
+
+To get the list of target platforms supported by the go compiler
+    go tool dist list
+
+To temporarily set the env variables for creating builds
+    GOOS=windows GOARCH=386 go build 01-hello-world.go
+
 
 
 
