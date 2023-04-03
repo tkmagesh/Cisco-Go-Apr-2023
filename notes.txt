@@ -131,3 +131,8 @@ Variable Declarations
 Constants
     Function Scope & Package Scope
         CAN have unused constants
+
+Constructs
+    if else
+    switch case 
+    for 
