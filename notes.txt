@@ -1,0 +1,65 @@
+Magesh Kuppan
+
+Schedule:
+    Commence   : 9:00 AM
+    Tea Break   : 11:00 AM (20 mins)
+    Lunch Break : 1:00 PM (1 hr)
+    Tea Break   : 3:30 PM (20 mins)
+    Wind up     : 5:00 PM
+
+Methodolgy:
+    - No powerpoints
+    - 100% Code driven class
+
+Class Repo:
+    https://github.com/tkmagesh/cisco-go-apr-2023
+
+
+Day-01
+    Language Introduction
+    Go Program Structure
+    Data Types
+    Constructs
+    Functions
+    Higher Order Functions
+    Error Handling
+
+Paradox of Choice (Barry Schwartz)
+
+Why Go?
+    1. Simplicity
+        - ONLY 25 keywords
+        - No access modifiers 
+        - No classes (only structs)
+        - No inheritence (only composition)
+        - No reference types (everything is a value)
+        - No exceptions (only errors which are values)
+        - No "try catch finally" 
+        - No pointer arithmetic
+        - No implicity type conversion
+        - No function overloading
+        - No operator overloading
+    2. Lightweight
+        - Close to hardware
+        - No VM
+        - Tooling support for cross-compilation
+        - Performance is equivalent to C++
+    3. Concurrency
+        - Lightweight Concurrency Model (Goroutines)
+            Linux OS Thread - 2MB
+            Goroutines - 4KB
+            N:M scheduler
+                Can execute N goroutines using M OS threads
+        - Concurrency features are built in the Language
+            go keyword, channel data type, channel operator (<-), range & "select case" constructs
+        - APIs
+            sync package
+            sync/atomic package
+
+        
+
+
+    
+
+
+
