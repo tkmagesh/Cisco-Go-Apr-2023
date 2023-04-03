@@ -136,3 +136,12 @@ Constructs
     if else
     switch case 
     for 
+
+Functions
+    Functions can have more than 1 return results
+    Variadic functions
+    Anonymous functions
+    Higher Order Functions
+        - Assign functions as values to variables
+        - Pass functions as arguments to other functions
+        - Return functions as return values
