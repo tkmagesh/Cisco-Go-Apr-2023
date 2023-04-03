@@ -56,8 +56,17 @@ Why Go?
             sync package
             sync/atomic package
 
-        
+Software Requirements:
+    - Go tools (https://go.dev/dl)     
+    - Any Editor (Visual Studio Code)
+    - Go extension for Visual Studio Code (https://marketplace.visualstudio.com/items?itemName=golang.Go)
 
+
+    Verification
+        > go version
+
+To execute a go program
+    go run <program.go>
 
     
 
