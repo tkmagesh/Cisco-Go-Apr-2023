@@ -25,9 +25,11 @@ func main() {
 	q, r, err := divideClient(100, divisor)
 	if err != nil {
 		fmt.Println("input error. handle it.")
-		return
+	} else {
+		fmt.Printf("Dividing 100 by %d, quotient = %d and remainder = %d\n", divisor, q, r)
 	}
-	fmt.Printf("Dividing 100 by %d, quotient = %d and remainder = %d\n", divisor, q, r)
+
+	panic("main is not right")
 }
 
 func divideClient(x, y int) (quotient, remainder int, err error) {
@@ -38,6 +40,18 @@ func divideClient(x, y int) (quotient, remainder int, err error) {
 		}
 	}()
 	quotient, remainder = divide(x, y)
+	/*
+		file, err := os.Open("data.txt")
+		if err != nil {
+			//log the error
+			return
+		}
+
+		// defer file.Close()
+		defer func() {
+			file.Close()
+		}()
+	*/
 	return
 }
 
@@ -47,6 +61,7 @@ func divide(x, y int) (quotient, remainder int) {
 	if y == 0 {
 		panic(DivideByZeroError)
 	}
+
 	quotient = x / y
 	fmt.Println("Calculating remainder")
 	remainder = x % y
