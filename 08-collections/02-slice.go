@@ -38,4 +38,15 @@ func main() {
 	fmt.Println("nos[2:5] =", nos[2:5])
 	fmt.Println("nos[2:] =", nos[2:])
 	fmt.Println("nos[:5] =", nos[:5])
+
+	subset := nos[2:5]
+	fmt.Println("subset =", subset)
+	subset[0] = 9999
+	fmt.Println("After changing subset")
+	fmt.Println("subset =", subset)
+	fmt.Println("nos =", nos)
+
+	fmt.Println("len(subset) =", len(subset))
+	fmt.Println("subset[5] =", subset[5])
+
 }
