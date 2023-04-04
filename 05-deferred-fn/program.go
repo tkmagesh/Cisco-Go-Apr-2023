@@ -32,9 +32,11 @@ func f1() {
 }
 
 func f2() {
-	defer func() {
-		fmt.Println("	deferred-f2")
-	}()
+	defer deferred_f2()
 	fmt.Println("f2 started")
 	fmt.Println("f2 completed")
+}
+
+func deferred_f2() {
+	fmt.Println("	deferred-f2")
 }
