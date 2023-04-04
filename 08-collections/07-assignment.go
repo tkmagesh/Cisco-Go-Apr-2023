@@ -19,7 +19,8 @@ func getWordsCountBySize(words []string) map[int]int {
 	wordsCountBySize := make(map[int]int)
 	for _, word := range words {
 		wordSize := len(word)
-		wordsCountBySize[wordSize]++
+		// wordsCountBySize[wordSize]++
+		wordsCountBySize[wordSize] = wordsCountBySize[wordSize] + 1
 	}
 	return wordsCountBySize
 }
