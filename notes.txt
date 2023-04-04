@@ -145,3 +145,14 @@ Functions
         - Assign functions as values to variables
         - Pass functions as arguments to other functions
         - Return functions as return values
+
+
+Collections
+    - Array
+        Fixed size typed collection
+
+    - Slice
+        Varying size typed collection
+
+    - Map
+        Key/Value typed collection 
