@@ -215,3 +215,10 @@ Application code has to be in the following folder
                 /tkmagesh
                     /Cisco-go-apr-2023
                         /09-modularity-app
+
+
+git clone https://github.com/tkmagesh/cisco-go-apr-2023.git
+git pull origin master 
+
+Escape (heap) Analysis
+     go run -gcflags="-m" 02-mem-alloc.go
