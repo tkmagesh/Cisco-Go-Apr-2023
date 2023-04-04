@@ -156,3 +156,62 @@ Collections
 
     - Map
         Key/Value typed collection 
+
+Modularity
+    Modules
+        Code that need to be versioned and deployed together 
+        A folder with go.mod file
+        go.mod (metadata information about the module)
+            name
+                (Note : module_name === repo path)
+            minimum go runtime version
+            dependencies
+
+    Packages
+        Internal organzation of a module
+        Folders
+
+    To create a module
+        go mod init <module_name>
+        ex:
+            go mod init github.com/tkmagesh/cisco-go-apr-2023/09-modularity-app
+
+    To execute a module
+        go run .
+
+    To create a build
+        go build .
+
+    To add 3rd party packages
+        go get <repo>
+
+    To update the mod file with updated references
+        go mod tidy
+
+    To download the dependencies
+        go mod download
+
+    To localize the dependencies
+        go mod vendor
+
+    Other useful mod commands
+        go mod graph
+        go mod why <module_name>
+
+    Reference:
+        https://go.dev/ref/mod
+
+Before go 1.13 
+    - No support for modules
+
+Application code has to be in the following folder
+    GOPATH
+        /bin
+            executables installed using the "go install" command
+        /pkg
+            source code for 3rd party modules & packages are downloaded (even today)
+        /src
+            /github.com
+                /tkmagesh
+                    /Cisco-go-apr-2023
+                        /09-modularity-app
