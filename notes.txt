@@ -222,3 +222,7 @@ git pull origin master
 
 Escape (heap) Analysis
      go run -gcflags="-m" 02-mem-alloc.go
+
+To detect data races
+    go run --race <program.go>
+    go build --race <program.go>
