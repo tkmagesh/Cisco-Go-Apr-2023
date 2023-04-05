@@ -226,3 +226,20 @@ Escape (heap) Analysis
 To detect data races
     go run --race <program.go>
     go build --race <program.go>
+
+Channels
+    Declaration
+        var ch chan int
+
+    Instantiation
+        ch = make(chan int)
+
+    Send Operation ( <- channel operator )
+        ch <- 100
+
+    Receive Operation
+        data := <- ch
+
+    Behaviors
+        The RECEIVE operation is ALWAYS a blocking a operation
+        The SEND operation is BLOCKED until a RECEIVE operation is initiated
