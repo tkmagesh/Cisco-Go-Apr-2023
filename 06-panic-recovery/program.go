@@ -34,9 +34,8 @@ func main() {
 
 func divideClient(x, y int) (quotient, remainder int, err error) {
 	defer func() {
-		if e := recover(); e != nil {
-			err = e.(error)
-			return
+		if er, ok := recover().(error); ok {
+			err = er
 		}
 	}()
 	quotient, remainder = divide(x, y)
