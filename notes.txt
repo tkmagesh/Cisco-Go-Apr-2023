@@ -243,3 +243,13 @@ Channels
     Behaviors
         The RECEIVE operation is ALWAYS a blocking a operation
         The SEND operation is BLOCKED until a RECEIVE operation is initiated
+
+Http Services
+    - net/http package
+    - Routing libraries
+    - Frameworks
+
+
+Awesome Go
+    https://github.com/avelino/awesome-go
+
