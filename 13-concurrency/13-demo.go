@@ -38,7 +38,7 @@ func main() {
 	}
 }
 
-func generateNumbers() chan int {
+func generateNumbers() <-chan int {
 	// count := rand.Intn(20)
 	count := 15
 	ch := make(chan int)
